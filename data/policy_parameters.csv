@@ -1,0 +1,21 @@
+parameter,value,unit,source,note
+match_cap,1200,EUR per year,government,State matches parental deposits 1:1 up to this amount in account years 1-5
+cap_step,0.10,share,government,Cap rises by 10% every cap_step_years (1320 EUR in 2032; 1452 EUR in 2037)
+cap_step_years,5,years,government,
+years,18,years,government,Yearly deposits until the child turns 18
+parent_max,10000,EUR per year,government,Maximum parental deposit; nothing above match_cap is matched
+first_deposit_year,2027,year,government,Official example: child born 2026 and deposits 2027-2044
+birth_year,2026,year,government,Birth year of the child in the official example
+official_state_total,24652,EUR,government,State contributions over 18 years at the full cap
+official_total_deposits,49304,EUR,government,Parent + state contributions over 18 years at the full cap
+official_value_r3,64109,EUR,government,Account value at 18 with a 3% yearly return
+official_value_r5,77062,EUR,government,Account value at 18 with a 5% yearly return
+gov_takeup,0.333333,share,government,Cost estimate assumes one third of births join
+gov_infants_per_year,23000,infants,government,Infants joining per year in the cost estimate
+gov_first_year_infants,56000,infants,government,First year covers two cohorts (born 2025 and 2026)
+gov_first_year_cost,55000000,EUR,government,Fiscal cost of the first year
+return_main,0.03,share,assumption,Yearly return; the lower of the two official examples
+return_alt,0.05,share,assumption,Yearly return; the higher of the two official examples
+inflation,0.02,share,assumption,ECB target; used to express values at 18 in euros of the birth year
+income_growth,0.03,share,assumption,Nominal yearly growth of household incomes and of the poverty line
+poverty_line_share,0.6,share,Eurostat definition,At-risk-of-poverty threshold = 60% of the national median equivalised income

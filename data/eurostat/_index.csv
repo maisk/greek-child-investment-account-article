@@ -1,0 +1,13 @@
+"dataset","description","eurostat_label","updated","rows"
+"ilc_odbt11","Savings in a typical month by household habits and income quintile (SILC 2020 ad-hoc module)","Savings in a typical month by household habits and income quintile","2025-10-21T23:00:00+0200",24
+"ilc_mdes04","Inability to face unexpected financial expenses, by household type and poverty status","Inability to face unexpected financial expenses","2026-06-11T23:00:00+0200",1173
+"ilc_mdes09","Inability to make ends meet, by household type and poverty status","Inability to make ends meet","2026-06-08T23:00:00+0200",7038
+"ilc_mdsd02","Material and social deprivation rate by income quintile and household type","Material and social deprivation rate by income quintile and household type","2026-07-17T11:00:00+0200",1368
+"ilc_di01","Distribution of income by quantiles (cut-off points and shares)","Distribution of income by quantiles","2026-07-27T23:00:00+0200",4599
+"ilc_di03","Mean and median equivalised income by age and sex","Mean and median income by age and sex","2026-06-08T23:00:00+0200",10998
+"ilc_di04","Mean and median equivalised income by household composition","Distribution of income by household composition","2026-06-08T23:00:00+0200",2742
+"ilc_li03","Share of people below 40-70% of national mean/median (poverty thresholds), by household type","At-risk-of-poverty rate by poverty threshold and household type - EU-SILC and ECHP surveys","2026-06-18T23:00:00+0200",5754
+"ilc_lvho02","Distribution of population by tenure status, household type and poverty status","Distribution of population by tenure status, type of household and income group","2026-06-11T23:00:00+0200",7140
+"ilc_lvho07b","Housing cost overburden rate by income quintile","Housing cost overburden rate by income quintile","2026-07-27T23:00:00+0200",132
+"hbs_exp_t133","HBS mean consumption expenditure by income quintile (PPS)","Mean consumption expenditure by income quintile","2025-10-22T23:00:00+0200",84
+"tec00131","Gross household saving rate (national accounts)","Household saving rate","2026-07-27T11:00:00+0200",11
