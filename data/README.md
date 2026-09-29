@@ -61,3 +61,33 @@ Downloaded for context on saving capacity, not used by the scripts yet:
 | `ilc_lvho07b` | housing cost overburden rate by income quintile |
 | `hbs_exp_t133` | HBS mean consumption expenditure by income quintile, PPS per household / per adult equivalent (latest 2020) |
 | `tec00131` | gross household saving rate, national accounts |
+
+## Licences of the sources
+
+The statistics in this folder belong to their sources, not to the author of this repository, so the
+repository's own licences (MIT for the code, CC BY 4.0 for the text) do not apply to them. Each source
+carries its own terms:
+
+| files | source | terms |
+|---|---|---|
+| `eurostat/` | Eurostat, EU-SILC, HBS and national accounts, dissemination API | **CC BY 4.0** ([Eurostat copyright notice](https://ec.europa.eu/eurostat/web/main/help/copyright-notice)) |
+| `elstat_silc_groups.csv`, `elstat_silc_indicators.csv` | ELSTAT, press release of 19 March 2026, typed in by hand | ELSTAT [Copyright and reuse of data policy](https://www.statistics.gr/documents/20181/1412250/Copyright_Reuse_Policy_EN.pdf/dfacb7d1-3d9b-471f-851a-8b8b09994a74): free reuse, commercial too, with no licence needed. Not a Creative Commons licence |
+| `policy_parameters.csv` | written for this project: the account rule as announced by the government, and our own assumptions | CC BY 4.0, like the article |
+| `derived/` | computed from the files above by `scripts/` | the terms of those sources |
+
+**What both statistical sources ask for.** Both require the same two things: name the source, and
+state any changes you made. Eurostat asks for its datasets to be cited by DOI and access date, for
+example `Source: Eurostat, https://doi.org/10.2908/ILC_DI04, accessed 2026-09-11`. The DOI is
+`10.2908/` + the dataset code; the access date is the day of the fetch (2026-09-11 for the extracts
+committed here), and `eurostat/_index.csv` records when Eurostat last updated each table. ELSTAT
+additionally asks you to state that ELSTAT bears no responsibility for the result of the modification.
+
+**Changes made here.** The files in `eurostat/` are Eurostat's values unchanged, only reshaped into
+long format with the labels alongside. The files in `derived/`, the figures and every number in the
+article are the author's own computations from those data (Dagum fits, deposit scenarios, account
+values, distributions of the state money, the universal amount). They are not figures published by
+Eurostat or ELSTAT, and neither body bears any responsibility for them.
+
+The ELSTAT press release in `research/` is kept locally and not committed, because it is the
+publisher's own document. The saved page of the government announcement in `research/` is kept as a
+record of the source; it belongs to its publisher and is not covered by this repository's licences.

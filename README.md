@@ -3,8 +3,9 @@
 *Who gets the state's matching money in Greece's "Investment Account for the New Generation", and what a
 flat grant with the same budget would do instead.*
 
-An article in Greek, **«Ο λογαριασμός για τη νέα γενιά: ποιο παιδί παίρνει τα κρατικά χρήματα;»**
-(`article/02_child_account.qmd`), built from official statistics (Eurostat, EU-SILC) and the government's
+An article in Greek, **«Ο λογαριασμός για τη νέα γενιά: ποιο παιδί παίρνει τα κρατικά χρήματα;»**,
+published at <https://maistrelis.com/articles/greek-child-investment-account/>. It is written in Quarto
+(`article/02_child_account.qmd`) and built from official statistics (Eurostat, EU-SILC) and the government's
 announcement (September 2026) with a reproducible R pipeline.
 
 The measure: parents deposit into an investment account for their child and the state matches every euro
@@ -18,10 +19,9 @@ able to deposit, and therefore which children the state money reaches. It covers
 - a budget-neutral alternative: the same amount for every child;
 - the sensitivity of the results to the assumptions.
 
-Companion project: [`greek-household-incomes`](../greek-household-incomes), an article on Greek household
+Companion project: [`greek-household-incomes`](https://github.com/maisk/greek-household-incomes), an article on Greek household
 incomes and inequality that explains the basic concepts (equivalised income, quintiles, Gini). The link to
-it is the `incomes_article` parameter at the top of `article/02_child_account.qmd`; set it to the public
-URL once that article is online.
+it is the `incomes_article` parameter at the top of `article/02_child_account.qmd`.
 
 ## Layout
 
@@ -66,3 +66,20 @@ parameter that produces it and rerun `just all`.
 `scripts/plot_income_distribution_household.R`, `doc/household_types.qmd` and the two ELSTAT tables in
 `data/` are also used by the companion project. They are kept as identical copies in both repositories;
 change them in both.
+
+## License
+
+The repository holds three kinds of material under three sets of terms:
+
+| what | licence |
+|---|---|
+| the code: `R/`, `scripts/`, `justfile` | [MIT](LICENSE) |
+| the text and the figures: `article/`, `doc/`, `figures/`, the READMEs | [CC BY 4.0](LICENSE-CC-BY-4.0) |
+| the data: `data/` | the terms of each source (Eurostat, ELSTAT), see [`data/README.md`](data/README.md#licences-of-the-sources) |
+
+Code and text have different licences because Creative Commons
+[recommends against](https://creativecommons.org/faq/#can-i-apply-a-creative-commons-license-to-software)
+its licences for software. MIT asks for the same thing as CC BY: keep the author's name.
+
+To credit the article: Kostas Maistrelis, «Ο λογαριασμός για τη νέα γενιά: ποιο παιδί παίρνει τα κρατικά
+χρήματα;», 2026, <https://maistrelis.com/articles/greek-child-investment-account/>, CC BY 4.0.

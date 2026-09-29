@@ -11,6 +11,11 @@ hugo:
   thumb: figures/account_by_quintile_2025.png
   teaser_thumb: true
   subjects: ["items/income-distribution-greece"]
+  attribution:
+    creator: "Kostas Maistrelis"
+  fields:
+    - { key: "dcterms:license", value: "items/licenses/cc-by-4", type: url }
+    - { key: "schema:codeRepository", value: "https://github.com/maisk/greek-child-investment-account-article", urlLabel: "github.com/maisk/greek-child-investment-account-article" }
 format:
   html:
     embed-resources: true
@@ -287,6 +292,9 @@ knitr::kable(sc, align = "lrrrr")
   πεμπτημόριο εισοδήματος.
 - **Παράμετροι του μέτρου:** ανακοίνωση της κυβέρνησης (government.gov.gr, 7/9/2026), συγκεντρωμένες
   στο `data/policy_parameters.csv` μαζί με τις δικές μας υποθέσεις.
-- **Κώδικας:** `R/child_account.R` (λογαριασμός, κανόνας κατάθεσης, δείκτες ανισότητας),
+- **Κώδικας:** ο κώδικας (R και Quarto) που κάνει την ανάλυση και παράγει το άρθρο, μαζί με τα αρχεία
+  που αναφέρονται εδώ, βρίσκεται στο GitHub:
+  [github.com/maisk/greek-child-investment-account-article](https://github.com/maisk/greek-child-investment-account-article).
+  Κύρια αρχεία: `R/child_account.R` (λογαριασμός, κανόνας κατάθεσης, δείκτες ανισότητας),
   `scripts/child_account.R` (σενάρια), `scripts/plot_child_account.R` (γραφήματα). Όλα τα νούμερα του
   άρθρου διαβάζονται από τα CSV στο `data/derived/`, και ξαναφτιάχνονται με `just all`.
